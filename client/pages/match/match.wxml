@@ -1,0 +1,28 @@
+<view class="match">
+    <view>
+        <button bindtap="setDisabled">今日为你匹配</button>
+    </view>
+    <view class="usersWrap">
+        <view wx:for="{{usersList}}"
+              wx:for-item="user"
+              wx:key="id" class="userBlock">
+            <block>
+                <navigator url="../user/user?title=robin">
+                    <image src="{{user.imgUrl}}" mode="aspectFill"
+                           style="width: 300rpx; height: 400rpx; background-color: #eeeeee;"/>
+                    <view class="user-info">
+                        <text class="user-info-detail">{{user.name}}</text>
+                        <text class="user-info-detail">{{user.birthday}}</text>
+                    </view>
+                    <view class="user-info">
+                        <text class="user-info-detail">{{user.city}}</text>
+                        <text class="user-info-detail">真爱值{{user.loveValue}}</text>
+                    </view>
+                </navigator>
+            </block>
+
+        </view>
+    </view>
+
+</view>
+ 

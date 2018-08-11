@@ -1,0 +1,100 @@
+<template name="star">
+    <image src="../../images/star.png" style="height:50rpx;width:50rpx"></image>
+</template>
+<view class="user">
+    <view class="commonInfo" style="background-color:#f9d7d7;padding:10rpx 30rpx">
+        <view class="userImgWrap">
+            <image src="{{userDetail.commonInfo.imgUrl}}" class="userImg"></image>
+
+        </view>
+        <view class="h-center">
+            <text>{{userDetail.commonInfo.name}}</text>
+        </view>
+        <view style="display:flex;justify-content:space-around;">
+            <view>{{userDetail.commonInfo.state}}</view>
+            <view>{{userDetail.commonInfo.birthday}}</view>
+            <view>{{userDetail.commonInfo.city}}</view>
+            <view>真爱值{{userDetail.commonInfo.loveValue}}</view>
+        </view>
+        <view style="display:flex;justify-content:space-between">
+            <view>
+                <view>
+                    <text style="color:red">{{userDetail.commonInfo.baptized}}</text>
+                    <text>受洗</text>
+                </view>
+                <view>
+                    <text style="color:red">{{userDetail.commonInfo.years}}</text>
+                    <text>年基督徒</text>
+                </view>
+            </view>
+            <view style="display:flex;align-items:center">
+                <image src="../../images/heart.png" style="height:50rpx;width:50rpx;"></image>
+                <view>关注</view>
+                <button size="mini" style="height:70rpx;width:200rpx;margin-left:25rpx">加好友</button>
+            </view>
+        </view>
+    </view>
+    <view class="infos">
+        <view style="display:flex;align-items:center">
+            <template is="star"></template>
+            <text>基本信息</text>
+        </view>
+        <view style="display:flex">
+            <text style="flex:1">学历：{{userDetail.baseInfo.educationBackground}}</text>
+            <text style="flex:1">身高：{{userDetail.baseInfo.height}}</text>
+        </view>
+        <view style="display:flex">
+            <text style="flex:1">职业：{{userDetail.baseInfo.professional}}</text>
+            <text style="flex:1">体重：{{userDetail.baseInfo.weight}}</text>
+        </view>
+        <view style="display:flex">
+            <text style="flex:1">性格：{{userDetail.baseInfo.character}}</text>
+            <text style="flex:1">健康状况：{{userDetail.baseInfo.health}}</text>
+        </view>
+        <view  >
+            <text  >自我评价：{{userDetail.baseInfo.selfAssessment}}</text>
+        </view>
+    </view>
+    <view class="infos">
+        <view style="display:flex;align-items:center">
+            <template is="star"></template>
+            <text>属灵信息</text>
+        </view>
+        <view>
+            <text>教会类型：{{userDetail.spiritualInfo.churchType}}</text>
+        </view>
+        <view>
+            <text>教会名称：{{userDetail.spiritualInfo.churchName}}</text>
+        </view>
+        <view>
+            <text>教会类型：{{userDetail.spiritualInfo.serveProject}}</text>
+        </view>
+    </view>
+    <view class="infos">
+        <view style="display:flex;align-items:center">
+            <template is="star"></template>
+            <text>择偶标准</text>
+        </view>
+        <view>
+            <text>{{userDetail.spouseGuideline}}</text>
+        </view>
+    </view>
+    <view class="infos">
+        <view style="display:flex;align-items:center">
+            <template is="star"></template>
+            <text>我的经历</text>
+        </view>
+        <view>
+            <text>1、我是如何信主的？</text>
+            <textarea style="border:1px solid lightgray" value="{{userDetail.experience.how}}" auto-height  />
+        </view>
+        <view>
+            <text>2、你在教会是如何服侍的？</text>
+            <textarea style="border:1px solid lightgray" value="{{userDetail.experience.server}}" auto-height  />
+        </view>
+        <view>
+            <text>3、简述对主的认识</text>
+            <textarea style="border:1px solid lightgray" value="{{userDetail.experience.understanding}}" auto-height  />
+        </view>
+    </view>
+</view>

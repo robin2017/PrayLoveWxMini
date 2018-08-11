@@ -1,0 +1,23 @@
+<view class="chat" style="padding:0 30rpx;">
+
+    <view wx:for="{{chatList}}"
+          wx:for-item="chat"
+          wx:key="id" style="border-bottom:1px solid gray;">
+        <navigator url="../chat-detail/chat-detail">
+            <view style="display:flex">
+            <view style="margin-right:20rpx;">
+                <image src="{{chat.imgUrl}}" style="height:100rpx;width:100rpx;"></image>
+            </view>
+            <view style="flex:1">
+                <view style="display:flex;justify-content:space-between">
+                    <text>{{chat.name}}</text>
+                    <text>{{chat.time}}</text>
+                </view>
+                <view>
+                    <text>{{chat.content}}</text>
+                </view>
+            </view>
+            </view>
+        </navigator>
+    </view>
+</view>

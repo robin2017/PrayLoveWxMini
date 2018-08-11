@@ -1,0 +1,22 @@
+.user{
+
+}
+.h-center{
+  display:flex;
+  justify-content: center;
+}
+.userImgWrap{
+  display:flex;
+  justify-content: center;
+}
+
+.userImg{
+  width:150rpx;
+  height:150rpx;
+  display:block;
+}
+
+.infos{
+  padding:10rpx 30rpx;
+  border-bottom:1px solid gray;
+}

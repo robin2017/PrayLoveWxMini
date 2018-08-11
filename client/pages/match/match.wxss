@@ -1,0 +1,31 @@
+.match{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.topBtn{
+  display:flex;
+  justify-content: center;
+}
+
+.usersWrap{
+  display:flex;
+  flex-wrap: wrap;
+
+
+}
+.userBlock{
+  height:500rpx;
+  width:300rpx;
+  margin:10px;
+
+  font-size:0.8em;
+  font-weight:bold;
+}
+.user-info{
+  display:flex;
+
+}
+.user-info-detail{
+  flex:1;
+}

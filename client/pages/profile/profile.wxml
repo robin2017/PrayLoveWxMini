@@ -1,0 +1,57 @@
+<template name="arrowright">
+    <image src="../../images/arrow-right.png" style="height:50rpx;width:50rpx;"></image>
+</template>
+
+<view class="profile">
+<image src="{{background}}" style="width:750rpx;height:450rpx"></image>
+<view style="height:150rpx;width:750rpx;position:relative;border-bottom:4px solid lightgray;">
+    <view style="height:200rpx;width:600rpx;position:absolute;border:1px solid gray;top:-100rpx;left:65rpx;background-color:white;border-radius:10px;display:flex">
+        <view>
+            <image src="{{imgUrl}}" style="height:160rpx;width:160rpx;border-radius:10rpx;margin:20rpx;"></image>
+        </view>
+        <view style="padding-top:30rpx">
+            <view style="margin-bottom:20rpx">{{name}}</view>
+            <view>真爱值{{loveValue}}</view>
+        </view>
+    </view>
+</view>
+<view>
+    <navigator url="..">
+        <view class="bar-info">
+            <view style="display:flex;align-items:center;">
+                <image src="../../images/profile/file.png" style="height:60rpx;width:60rpx;margin-right:20rpx"></image>
+                <text>个人信息</text>
+            </view>
+
+            <template is="arrowright"></template>
+        </view>
+    </navigator>
+    <navigator url="..">
+        <view class="bar-info">
+            <view style="display:flex;align-items:center;">
+                <image src="../../images/profile/heart.png" style="height:60rpx;width:60rpx;margin-right:20rpx"></image>
+                <text>我关注过谁</text>
+            </view>
+            <template is="arrowright"></template>
+        </view>
+    </navigator>
+    <navigator url="..">
+        <view class="bar-info">
+            <view style="display:flex;align-items:center;">
+                <image src="../../images/profile/smile.png" style="height:60rpx;width:60rpx;margin-right:20rpx"></image>
+                <text>谁关注过我</text>
+            </view>
+            <template is="arrowright"></template>
+        </view>
+    </navigator>
+    <navigator url="..">
+        <view class="bar-info">
+            <view style="display:flex;align-items:center;">
+                <image src="../../images/profile/star.png" style="height:60rpx;width:60rpx;margin-right:20rpx"></image>
+                <text>关于我们</text>
+            </view>
+            <template is="arrowright"></template>
+        </view>
+    </navigator>
+</view>
+</view>
